@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-const RecentExpense = () => {
+const RecentExpenses = () => {
   return <Text>RecentExpense</Text>;
 };
 
-export default RecentExpense;
+export default RecentExpenses;
