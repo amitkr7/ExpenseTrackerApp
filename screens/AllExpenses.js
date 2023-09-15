@@ -9,6 +9,7 @@ const AllExpenses = () => {
     <ExpensesOutput
       expenses={expensesCtx.expenses}
       expensesPeriod='Last 7 days'
+      fallbackText='No expenses found'
     />
   );
 };
