@@ -4,74 +4,11 @@ import ExpensesSummary from './ExpensesSummary';
 import ExpensesList from './ExpensesList';
 import { GlobalStyles } from '../../constants/styles';
 
-const DUMMY_EXPENSES = [
-  {
-    id: 'e1',
-    description: 'Books',
-    amount: 50,
-    date: new Date('2021-12-19'),
-  },
-  {
-    id: 'e2',
-    description: 'Vegetables',
-    amount: 40,
-    date: new Date('2022-10-09'),
-  },
-  {
-    id: 'e3',
-    description: 'FRUITS',
-    amount: 40,
-    date: new Date('2023-10-09'),
-  },
-  {
-    id: 'e4',
-    description: 'CLOTHES',
-    amount: 49,
-    date: new Date('2023-02-08'),
-  },
-  {
-    id: 'e5',
-    description: 'SHOES',
-    amount: 70,
-    date: new Date('2022-12-12'),
-  },
-  {
-    id: 'e6',
-    description: 'Vegetables',
-    amount: 40,
-    date: new Date('2022-10-09'),
-  },
-  {
-    id: 'e7',
-    description: 'FRUITS',
-    amount: 40,
-    date: new Date('2023-10-09'),
-  },
-  {
-    id: 'e8',
-    description: 'CLOTHES',
-    amount: 49,
-    date: new Date('2023-02-08'),
-  },
-  {
-    id: 'e9',
-    description: 'SHOES',
-    amount: 70,
-    date: new Date('2022-12-12'),
-  },
-  {
-    id: 'e10',
-    description: 'SHOES',
-    amount: 70,
-    date: new Date('2022-12-12'),
-  },
-];
-
 const ExpensesOutput = ({ expenses, expensesPeriod }) => {
   return (
     <View style={styles.container}>
-      <ExpensesSummary expenses={DUMMY_EXPENSES} periodName={expensesPeriod} />
-      <ExpensesList expenses={DUMMY_EXPENSES} />
+      <ExpensesSummary expenses={expenses} periodName={expensesPeriod} />
+      <ExpensesList expenses={expenses} />
     </View>
   );
 };
